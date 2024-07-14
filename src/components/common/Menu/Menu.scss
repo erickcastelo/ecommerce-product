@@ -1,0 +1,49 @@
+.menu-content {
+  // display: none;
+  &.show-menu {
+    display: block;
+  }
+  .style-modal {
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+  }
+
+  .list-menu {
+    font-family: "Graphie Bold";
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 60vw;
+    height: 100vh;
+    z-index: 1050;
+
+    .list-menu-item:first-child {
+      margin: 1em 0 2em;
+    }
+
+    .list-menu-item {
+      padding: 0.7em 1.5em;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .list-menu {
+      font-family: "Graphie Light";
+      font-weight: 400;
+      position: initial;
+      background-color: transparent;
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

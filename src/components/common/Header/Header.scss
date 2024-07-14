@@ -1,0 +1,44 @@
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  position: relative;
+  .container-menu-hangurguer {
+    display: flex;
+    align-items: center;
+    .menu-hamburguer-icon {
+      display: block;
+      background-image: url("../../../assets/menu-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .container-cart {
+    display: flex;
+    align-items: center;
+
+    .avatar {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .container-image {
+    padding: 1em;
+  }
+
+  .show-menu {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    border-bottom: 2px solid gray;
+
+    .container-cart {
+      .avatar {
+        width: 85px;
+        height: 85px;
+      }
+    }
+  }
+}

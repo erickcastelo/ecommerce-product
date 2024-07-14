@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Graphie Light";
+  src: local("Graphie Light"),
+    url(./assets/fonts/Graphie-Bold.otf) format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Graphie Bold";
+  src: local("Graphie Bold"),
+    url(./assets/fonts/Graphie-Bold.otf) format("truetype");
+  font-weight: bold;
+}
